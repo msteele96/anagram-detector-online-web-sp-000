@@ -11,10 +11,11 @@ class Anagram
     matches = []
     array.each do |compare|
       # compare.split("").sort
-    if @word.split("").sort == compare.split("").sort
-      matches << compare
-    else
-      matches
+      if @word.split("").sort == compare.split("").sort
+        matches << compare
+      else
+        matches
+      end
     end
   end
 
