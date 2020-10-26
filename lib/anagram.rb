@@ -15,10 +15,9 @@ class Anagram
       # compare.split("").sort
       if @word.split("").sort == compare.split("").sort
         matches << compare
-      else
-        matches
       end
     end
+    matches
   end
 
 end
